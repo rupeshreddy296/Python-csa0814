@@ -1,1 +1,12 @@
+def simple_interest(principal, time, rate=5):
+    interest = (principal * time * rate) / 100
+    return interest
+principal = float(input("Enter the principal amount: "))
+time = float(input("Enter the time period in years: "))
+interest = simple_interest(principal, time)
+print("The simple interest is:", interest)
 
+output:
+Enter the principal amount: 100
+Enter the time period in years: 2
+The simple interest is: 10.0
