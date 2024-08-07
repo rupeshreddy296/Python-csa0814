@@ -1,1 +1,12 @@
+num = int(input("Enter a number: "))
+num_str = str(num)
+most_significant = num_str[0]
+least_significant = num_str[-1]
+print(f"Most significant digit in {num} is {most_significant}")
+print(f"Least significant digit in {num} is {least_significant}")
 
+
+  output:
+Enter a number: 1205
+Most significant digit in 1205 is 1
+Least significant digit in 1205 is 5
