@@ -1,1 +1,12 @@
+decimal_num = int(input("Enter a decimal number: "))
+binary_num = bin(decimal_num)[2:]
+print("Binary representation:", binary_num)
+binary_input = input("Enter a binary number: ")
+decimal_number = int(binary_input, 2)  
+print("Decimal representation:", decimal_number)
 
+  output:
+Enter a decimal number: 10
+Binary representation: 1010
+Enter a binary number: 1010
+Decimal representation: 10
