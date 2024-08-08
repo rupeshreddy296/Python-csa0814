@@ -1,1 +1,16 @@
+sentence = input("enter a sentence: ")
+vowels = 0
+consonants = 0
+for char in sentence:
+    char = char.lower()
+    if char in "aeiou":
+        vowels += 1
+    elif char.isalpha():
+        consonants += 1
+print("Number of vowels:", vowels)
+print("Number of consonants:", consonants)
 
+output:
+enter a sentence: python is python
+Number of vowels: 3
+Number of consonants: 11
