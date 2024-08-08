@@ -1,1 +1,18 @@
+lst = []
+for i in range(5):
+    lst.append(int(input("Enter a number: ")))
+    lst.sort()
+    n = len(lst)
+    print("First largest number:", lst[n-1])
+    print("Second largest number:", lst[n-2])
 
+output:
+Enter a number: 10
+First largest number: 10
+Second largest number: 10
+Enter a number: 5
+First largest number: 10
+Second largest number: 5
+Enter a number: 13
+First largest number: 13
+Second largest number: 1
