@@ -1,1 +1,15 @@
+arr1 = []
+arr2 = []
+for i in range(1):
+    arr1.append(int(input("Enter a number for the first array: ")))
+for i in range(1):
+    arr2.append(int(input("Enter a number for the second array: ")))
+merged_array = arr1 + arr2
 
+print("Merged array:", merged_array)
+
+
+output:
+Enter a number for the first array: 12345
+Enter a number for the second array: 12345678
+Merged array: [12345, 12345678]
