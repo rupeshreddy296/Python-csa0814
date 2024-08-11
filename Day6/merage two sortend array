@@ -1,1 +1,11 @@
+lis1=[1,6,3,2,5,4]
+lis2=[11,8,10,7,9]
+lis1.sort()
+lis2.sort()
+print(lis1, lis2)
+merged=lis1+lis2
+print(merged)
 
+output:
+[1, 2, 3, 4, 5, 6] [7, 8, 9, 10, 11]
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
