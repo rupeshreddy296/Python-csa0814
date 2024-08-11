@@ -1,1 +1,10 @@
+n=int(input("enter the number:"))
+p=str(n)
+if len(p) == len(set(p)):
+    print("isogram")
+else:
+    print("not iso gram")
 
+output:
+enter the number:123
+isogram
