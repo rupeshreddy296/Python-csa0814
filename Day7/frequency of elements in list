@@ -1,1 +1,7 @@
+from collections import Counter
+lst=[1,2,2,3,3,3]
+freq= Counter(lst)
+print(freq)
 
+output:
+      Counter({3: 3, 2: 2, 1: 1})
