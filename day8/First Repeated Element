@@ -1,1 +1,13 @@
+arr = list(map(int, input("Enter array elements: ").split()))
+seen = set()
+repeated = None
+for num in arr:
+    if num in seen:
+        repeated = num
+        break
+    seen.add(num)
+print(f"Repeated element: {repeated}")
 
+OUTPUT:
+2,1,3,4,2
+Repeated element:2
