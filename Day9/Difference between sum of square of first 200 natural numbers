@@ -1,1 +1,11 @@
+n=200
+s=sum(i*i for i in range(1,n+1))
+print("Sum of square of 200 natural numbers:",s)
+s1=sum(i for i in range(1,n+1))
+print("square of sum of 200 natural numbers:",s1**2)
+print("Difference of between s and s1:",(s1**2)-s)
 
+OUTPUT:
+Sum of square of 200 natural numbers: 2686700
+square of sum of 200 natural numbers: 404010000
+Difference of between s and s1: 401323300
