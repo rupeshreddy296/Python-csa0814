@@ -1,1 +1,13 @@
+max_p = 0
+for i in range(9999,999,-1):
+    for j in range(i, 999,-1):
+        product = i * j
+        if str(product) == str(product)[::-1] and product > max_p:
+            max_p = product
+            factors = (i, j)
+print(f"Largest palindrome: {max_p}")
+print(f"Factors: {factors[0]} and {factors[1]}")
 
+OUTPUT:
+Largest palindrome: 99000099
+Factors: 9999 and 9901
