@@ -1,1 +1,17 @@
+def transform_string(s):
+  freq = {}
+  for char in s:
+    freq[char] = freq.get(char, 0) + 1
+  result = ''
+  for char in s:
+    offset = freq[char]
+    new_char = chr(ord(char) + offset)
+    result += new_char
+  return result
+input_string = "abbc".upper()
+transformed_string = transform_string(input_string)
+print("Transformed string:", transformed_string)
 
+
+output:
+    Transformed string: BDDD
