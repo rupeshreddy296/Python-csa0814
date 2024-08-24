@@ -1,1 +1,10 @@
-
+E = [10, 20, 30, 40, 50]
+L = [5, 10, 20, 30, 10]
+t = 5
+present = 0
+count=0
+for i in range(t):
+  present += E[i] - L[i]
+  count+=present
+average = count / t
+print("Average number of students present:", average)
