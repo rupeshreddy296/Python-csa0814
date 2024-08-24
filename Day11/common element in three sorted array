@@ -1,1 +1,12 @@
+arr1 = [1, 5, 10, 20, 40, 80]
+arr2 = [6, 7, 20, 80, 100]
+arr3 = [3, 4, 15, 20, 30, 70, 80, 120]
+set1 = set(arr1)
+set2 = set(arr2)
+set3 = set(arr3)
+common_elements = set1.intersection(set2).intersection(set3)
+result = sorted(common_elements)
+print(result)
 
+OUTPUT:
+[20, 80]
