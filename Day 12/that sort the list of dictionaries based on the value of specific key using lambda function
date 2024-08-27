@@ -1,1 +1,10 @@
+list_of_dicts = [
+    {'name': 'Alice', 'age': 30},
+    {'name': 'Bob', 'age': 25},
+    {'name': 'Charlie', 'age': 35}
+]
+sorted_list = sorted(list_of_dicts, key=lambda d: d['age'])
+print("Sorted list of dictionaries:", sorted_list)
 
+output:
+      Sorted list of dictionaries: [{'name': 'Charlie', 'age': 15}, {'name': 'Bob', 'age': 25}, {'name': 'Alice', 'age': 30}]
