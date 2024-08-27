@@ -1,1 +1,15 @@
+class InvalidAgeError(Exception):
+    pass
+def validate_age(age):
+    if not 80 <= age <= 100:
+        raise InvalidAgeError(f"Age must be between 80 and 100 inclusive. Provided age: {age}")
+    print(f"Age is valid: {age}")
+for age in [75, 85]:
+    try:
+        validate_age(age)
+    except InvalidAgeError as e:
+        print(e)
 
+output:
+Age must be between 80 and 100 inclusive. Provided age: 75
+Age is valid: 85
