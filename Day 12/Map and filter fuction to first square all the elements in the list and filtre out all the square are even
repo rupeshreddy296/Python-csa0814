@@ -1,1 +1,10 @@
-
+numbers = [1, 2, 3, 4, 5]
+def square(x):
+    return x * x
+def is_even(x):
+    return x % 2 == 0
+squared_numbers = map(square, numbers)
+even_squares = filter(is_even, squared_numbers)
+print(list(even_squares))
+output:
+[4, 16]
